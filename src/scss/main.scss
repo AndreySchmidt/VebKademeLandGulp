@@ -1,0 +1,28 @@
+// Base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+// sassGlob могу так:
+// @import "./blocks/*.scss";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/nav";
+@import "./blocks/btn-login";
+@import "./blocks/btn-signup";
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   background-image: url("./../img/1.jpg");
+//   background-size: cover;
+// }
+
+// .container {
+// }
