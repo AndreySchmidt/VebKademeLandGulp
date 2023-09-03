@@ -3,18 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Main page</title>
   </head>
   <body>
     @@include('blocks/header.html')
-    <picture>
-      <source srcset="./img/1.webp" type="image/webp" />
-      <img src="./img/1.jpg" alt="" />
-    </picture>
 
-    @@include('blocks/nav.html')
-
-    <input id="datepicker" name="datepicker" type="text" autocomplete="off" />
+    <main>@@include('blocks/discover.html')</main>
 
     @@include('blocks/footer.html')
 
