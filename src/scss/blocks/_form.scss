@@ -1,0 +1,21 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+}
+
+.form__pipe {
+  height: 24px;
+  width: 1px;
+  background-color: var(--text-color-second);
+}
+
+.discover__form-label {
+
+}
+
+.discover__form-btn {
+
+}

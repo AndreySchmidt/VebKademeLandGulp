@@ -20,6 +20,22 @@ img {
   font-weight: 700;
   font-style: normal;
   line-height: normal;
+
+  &--decor {
+    position: relative;
+  }
+
+  &--decor::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 268px;
+    height: 24px;
+    background-image: url(./../img/underline.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .text {
