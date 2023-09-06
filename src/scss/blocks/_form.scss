@@ -12,10 +12,45 @@
   background-color: var(--text-color-second);
 }
 
-.discover__form-label {
+.form-label {
+  padding-left: 36px;
 
+  display: grid;
+  gap: 8px;
+
+  &.country {
+    background-image: url(./../img/map.svg);
+    background-size: 24px 24px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &.date {
+    background-image: url(./../img/calendar.svg);
+    background-size: 24px 24px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  span {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+.form__input {
+  font-size: 14px;
+  font-weight: 450;
+  font-style: normal;
+  line-height: normal;
+
+  &::placeholder {
+    color: var(--text-color-second);
+  }
 }
 
 .discover__form-btn {
-
 }

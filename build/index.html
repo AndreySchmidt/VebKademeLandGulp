@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/autoComplete.02.css" />
     <title>Main page</title>
   </head>
   <body>
@@ -51,9 +52,28 @@
         </div>
 
         <div class="discover__form"><form action="" class="form">
-  <label for="" class="discover__form-label">location</label>
+  <label for="" class="form-label country">
+    <span>locations</span>
+    <input
+      name="country"
+      id="country"
+      type="text"
+      class="form__input"
+      placeholder="Here is a placeholder"
+      autocomplete="off"
+    />
+  </label>
   <div class="form__pipe"></div>
-  <label for="" class="discover__form-label">date</label>
+  <label for="" class="form-label date">
+    Date and time
+    <input
+      name="date"
+      type="text"
+      class="form__input"
+      placeholder="MM.DD.YYYY"
+      autocomplete="off"
+    />
+  </label>
   <button class="discover__form-btn">
     <img src="./img/search-btn.svg" alt="Search" />
   </button>
@@ -61,6 +81,19 @@
 </div>
       </div>
       <div class="discover__picture">
+        <div class="hint-discover">
+  <div class="hint-discover__picture">
+    <img src="./img/hint.jpg" alt="" class="hint-discover__img" />
+  </div>
+  <div class="hint-discover__desc">
+    <div class="hint-discover__title">
+      title
+      <span class="hint-discover__rating">rating</span>
+    </div>
+    <div class="hint-discover__price">$</div>
+  </div>
+</div>
+
         <img src="./img/hero-img.png" alt="" class="discover__picture-img" />
       </div>
     </div>
