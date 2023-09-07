@@ -3,9 +3,13 @@
   padding: 12px;
   gap: 16px;
   max-width: 324px;
+  width: 100%;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+  position: absolute;
+  top: 90px;
+  left: 40px;
 }
 
 .hint-discover__picture {
@@ -18,8 +22,50 @@
   flex-grow: 1;
 }
 
+.hint-discover__rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+
+  &::before {
+    content: "";
+    width: 17px;
+    height: 16px;
+    background-image: url(./../img/star-small.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 .hint-discover__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.hint-discover__price {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+
+  .muted {
+    color: var(--text-color-second);
+  }
+
+  .currency {
+    color: var(--accent);
+  }
+
+
 }

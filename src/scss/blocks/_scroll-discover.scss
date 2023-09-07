@@ -1,0 +1,37 @@
+.scroll-wrap {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 140px;
+  height: 140px;
+  z-index: 5;
+}
+
+.scroll-discover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  // top: 90px;
+  // left: 40px;
+}
+
+.scroll-discover__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-discover__text {
+  animation: rotation 10s linear 0s infinite running normal;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
