@@ -6,7 +6,7 @@
 // new AirDatepicker("#datepicker");
 
 // console.log(hello);
-
+import { easepick } from '@easepick/bundle';
 import autoComplete from "@tarekraafat/autocomplete.js";
 
 const autoCompleteJS = new autoComplete({
@@ -30,4 +30,13 @@ const autoCompleteJS = new autoComplete({
     },
   },
   searchEngine: "strict", // strict | loose
+});
+
+
+// import { easepick } from '@easepick/bundle';
+const picker = new easepick.create({
+  element: document.getElementById('date'),
+  css: [
+    'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
+  ],
 });
