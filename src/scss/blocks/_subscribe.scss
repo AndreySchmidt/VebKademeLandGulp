@@ -1,0 +1,48 @@
+.subscribe {
+  padding: 80px 0;
+  background-color: var(--accent);
+}
+
+.subscribe__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 180px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: -80px;
+    width: 236px;
+    height: 273px;
+    background-image: url("./../img/subscribe-pin-bg.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.subscribe__desc {
+  display: grid;
+  gap: 4px;
+}
+
+.subscribe__title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.subscribe__text {
+  color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 450;
+  font-style: normal;
+  line-height: normal;
+}
+
+.subscribe__form {
+}
