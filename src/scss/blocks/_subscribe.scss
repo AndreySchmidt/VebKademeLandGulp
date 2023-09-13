@@ -1,6 +1,7 @@
 .subscribe {
   padding: 80px 0;
   background-color: var(--accent);
+  overflow: hidden;
 }
 
 .subscribe__row {
@@ -8,14 +9,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   padding-left: 180px;
 
   &::before {
     content: "";
     position: absolute;
     left: -80px;
-    top: -80px;
+    top: -85px;
     width: 236px;
     height: 273px;
     background-image: url("./../img/subscribe-pin-bg.svg");
@@ -45,4 +46,5 @@
 }
 
 .subscribe__form {
+  flex-grow: 1;
 }
