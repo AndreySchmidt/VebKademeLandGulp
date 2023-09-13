@@ -7,11 +7,13 @@
 
 // console.log(hello);
 
-import ScrollReveal from "scrollreveal";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
+import scrollRevealFunc from "./modules/scrollReveal";
 import { easepick } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
+import swiperFunc from "./modules/swiper";
+
+swiperFunc();
+scrollRevealFunc();
 
 const autoCompleteJS = new autoComplete({
   selector: "#country",
@@ -40,36 +42,4 @@ const autoCompleteJS = new autoComplete({
 const picker = new easepick.create({
   element: document.getElementById("date"),
   css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"],
-});
-
-// npm install swiper
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
-  spaceBetween: 32,
-  navigation: {
-    nextEl: "#sliderNext",
-    prevEl: "#sliderPrev",
-  },
-});
-
-// ScrollReveal базовые настройки для всех элементов
-ScrollReveal({
-  distance: "60px",
-  duration: 2800,
-});
-
-ScrollReveal().reveal(`.hint-discover, .discover__title`, {
-  origin: "left",
-});
-
-ScrollReveal().reveal(`.header, .partners`, {
-  origin: "top",
-});
-
-ScrollReveal().reveal(`.scroll-discover, .discover__text`, {
-  origin: "right",
-});
-
-ScrollReveal().reveal(`.discover__form`, {
-  origin: "bottom",
 });
