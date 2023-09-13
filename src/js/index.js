@@ -6,6 +6,8 @@
 // new AirDatepicker("#datepicker");
 
 // console.log(hello);
+
+import ScrollReveal from "scrollreveal";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 import { easepick } from "@easepick/bundle";
@@ -48,4 +50,26 @@ const swiper = new Swiper(".swiper", {
     nextEl: "#sliderNext",
     prevEl: "#sliderPrev",
   },
+});
+
+// ScrollReveal базовые настройки для всех элементов
+ScrollReveal({
+  distance: "60px",
+  duration: 2800,
+});
+
+ScrollReveal().reveal(`.hint-discover, .discover__title`, {
+  origin: "left",
+});
+
+ScrollReveal().reveal(`.header, .partners`, {
+  origin: "top",
+});
+
+ScrollReveal().reveal(`.scroll-discover, .discover__text`, {
+  origin: "right",
+});
+
+ScrollReveal().reveal(`.discover__form`, {
+  origin: "bottom",
 });
