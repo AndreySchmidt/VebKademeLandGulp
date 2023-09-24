@@ -11,8 +11,13 @@ import scrollRevealFunc from "./modules/scrollReveal";
 import { easepick } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
 import swiperFunc from "./modules/swiper";
+import swiperTestimonials from "./modules/swiper-testimonials";
 
 swiperFunc();
+swiperTestimonials(1);
+swiperTestimonials(2);
+swiperTestimonials(3);
+
 scrollRevealFunc();
 
 const autoCompleteJS = new autoComplete({
