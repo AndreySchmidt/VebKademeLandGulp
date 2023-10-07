@@ -12,6 +12,9 @@ import { easepick } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
 import swiperFunc from "./modules/swiper";
 import swiperTestimonials from "./modules/swiper-testimonials";
+import mobileNav from "./modules/mobile-nav.js";
+
+mobileNav();
 
 swiperFunc();
 swiperTestimonials(1);

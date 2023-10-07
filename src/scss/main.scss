@@ -1,6 +1,7 @@
 // Base
 @import "./base/reset";
 @import "./base/vars";
+@import "./base/mixins";
 @import "./base/base";
 @import "./base/utils";
 @import "./base/containers";
@@ -26,15 +27,5 @@
 @import "./blocks/subscribe";
 @import "./blocks/subscribe-form";
 @import "./blocks/footer-nav";
-
-// * {
-//   box-sizing: border-box;
-// }
-
-// body {
-//   background-image: url("./../img/1.jpg");
-//   background-size: cover;
-// }
-
-// .container {
-// }
+@import "./blocks/mobile-nav";
+@import "./blocks/nav-icon";
