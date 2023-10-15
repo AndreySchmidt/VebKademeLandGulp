@@ -7,6 +7,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
 }
 
 .discover__title {
@@ -19,4 +23,16 @@
 
 .discover__picture {
   position: relative;
+
+  @include mediaTablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: -1/1;
+    margin: 0 auto;
+  }
+
+  @include mediaMobile {
+    display: none;
+  }
 }

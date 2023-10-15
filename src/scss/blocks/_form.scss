@@ -4,12 +4,23 @@
   align-items: center;
   gap: 16px;
   padding: 12px 16px;
+  border: 1px solid rgba(144, 144, 144, 0.30);
+  background: #fff;
+  border-radius: 16px;
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__pipe {
   height: 24px;
   width: 1px;
   background-color: var(--text-color-second);
+
+  @include mediaMobile {
+    display: none;
+  }
 }
 
 .form-label {
@@ -50,7 +61,11 @@
   &::placeholder {
     color: var(--text-color-second);
   }
+
 }
 
 .discover__form-btn {
+  @include mediaMobile {
+    margin: 0 auto;
+  }
 }
