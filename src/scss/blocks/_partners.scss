@@ -1,5 +1,9 @@
 .partners {
   padding: 60px 0;
+
+  @include mediaMobile {
+    padding: 10px 0;
+  }
 }
 
 .partners__row {
@@ -7,6 +11,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+
+  @include mediaTablet {
+    flex-direction: column;
+  }
 }
 
 .partners__title {
@@ -21,4 +29,9 @@
   display: flex;
   align-items: center;
   gap: 32px;
+
+  @include mediaTablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

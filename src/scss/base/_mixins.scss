@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin mediaMobileXS() {
+  @media (max-width: 374px) {
+    @content;
+  }
+}

@@ -13,6 +13,10 @@
 .popular__title {
   display: grid;
   gap: 16px;
+
+  @include mediaMobile {
+    gap: 4px;
+  }
 }
 
 .popular__controls {

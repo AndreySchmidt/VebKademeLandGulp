@@ -44,6 +44,10 @@ img {
   @include mediaMobile {
     font-size: 40px;
   }
+
+  @include mediaMobileXS {
+    font-size: 26px;
+  }
 }
 
 .title-3 {
@@ -51,6 +55,10 @@ img {
   font-weight: 500;
   font-style: normal;
   line-height: normal;
+
+  @include mediaMobile {
+    font-size: 28px;
+  }
 }
 
 .text {
