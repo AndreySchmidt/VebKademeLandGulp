@@ -58,6 +58,10 @@
     height: 350px;
     width: 100%;
   }
+
+  @include mediaMobile {
+    height: 300px;
+  }
 }
 
 .smooth-transition {
