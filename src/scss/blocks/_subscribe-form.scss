@@ -2,6 +2,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 400px;
+
+  @include mediaMobile {
+    min-width: unset;
+  }
+
+  @include mediaMobileXS {
+    flex-direction: column;
+    align-items: stretch;
+    min-width: unset;
+  }
 }
 
 .subscribe-form__input {

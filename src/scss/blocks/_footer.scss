@@ -6,8 +6,11 @@
   a {
     color: #fff;
   }
-}
 
+  @include mediaMobile {
+    padding: 10px;
+  }
+}
 
 .footer__row {
   // display: flex;
@@ -17,12 +20,22 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 128px;
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .footer__copyright {
   display: grid;
   gap: 24px;
   max-width: 300px;
+
+  @include mediaMobile {
+    max-width: unset;
+    gap: 10px;
+  }
 }
 
 .footer__nav {
@@ -30,4 +43,9 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 40px;
+
+  @include mediaMobile {
+    grid-row: -1/1;
+    gap: 10px;
+  }
 }
